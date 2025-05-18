@@ -4,6 +4,8 @@
 
 The AI Marketing Agent is a web application designed to assist marketers in generating content ideas, developing marketing strategies, and analyzing campaign performance. It leverages the power of Azure OpenAI to provide intelligent suggestions and insights, streamlined through a user-friendly interface built with Next.js, TypeScript, and Shadcn UI.
 
+For a detailed explanation of the project's architecture, please see [`ARCHITECTURE.md`](./ARCHITECTURE.md).
+
 ## Features
 
 -   **AI-Powered Content Idea Generation**: Dynamically generates creative content ideas tailored to specific marketing goals, target platforms, and audience demographics.
