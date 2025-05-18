@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { ThemeToggleButton } from "@/components/ui/ThemeToggleButton";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,13 +35,14 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          themes={['light', 'dark']} // Explicitly list supported themes, including dark
+          themes={["light", "dark"]} // Explicitly list supported themes, including dark
         >
           <div className="fixed top-4 right-4 z-50">
             <ThemeToggleButton />
           </div>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
